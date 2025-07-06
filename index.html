@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROYECTO PANDA</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.minpanda.css">
+</head>
+<body>
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-sm bg-danger navbar-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="image/pandita.png" class="w-25"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="av-link btn btn-secondary rounded-pill px-3" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Novedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proyectos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Panda Rojo</a></li>
+            <li><a class="dropdown-item" href="#">Pandas en el Mundo</a></li>
+            <li><a class="dropdown-item" href="#">Panditas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- IMAGEN INICIAL-->
+
+<div class="container d-flex justify-content-center mt-2">
+
+	<div class="row align-items-center"> 
+        <!-- Columna de la imagen (Izquierda) -->
+        <div class="col-md-5 order-md-1 order-2">
+				<img src="image/pandarojo1.jpg" class="img-thumbnail" w-25 alt="Panda">
+		</div>
+
+		<div class="col-md-7 order-1 order-md-2">
+            <h2 class="text-danger">El Panda Rojo</h2>
+            <p>El panda rojo es un mamífero que habita en los bosques del <b>Himalaya</b> y su dieta se basa principalmente en bambú.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Acordeón -->
+<div class="container d-flex justify-content-center">
+<div class="row align-items-center">
+<div class="col-md-5">
+	<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn text-danger" data-bs-toggle="collapse" href="#collapseOne">
+        Panda Gigante (Ailuropoda melanoleuca)
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        Es el más conocido y emblemático, con su característico pelaje blanco y negro. Habita en los bosques de bambú de China y se alimenta casi exclusivamente de esta planta.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn text-danger" data-bs-toggle="collapse" href="#collapseTwo" >
+       Panda Rojo (Ailurus fulgens)
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">A pesar de su nombre, no está relacionado con el panda gigante. Es más pequeño, tiene pelaje rojizo y una cola larga. Vive en los bosques del Himalaya y el suroeste de China.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn text-danger" data-bs-toggle="collapse" href="#collapseThree" >Panda Gigante de Qinling (Ailuropoda qinlingensis)
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">Es una subespecie del panda gigante que se encuentra en las montañas Qinling de China. Su pelaje es marrón y beige en lugar de blanco y negro, y es más pequeño en tamaño.
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="col-md-7">
+		<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+	  <!-- Indicators/dots -->
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	  </div>
+
+	  <!-- The slideshow/carousel -->
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="image/panda1.jpg" alt="Panda" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="image/panda2.jpg" alt="Panda" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="image/panda3.jpg" alt="Panda" class="d-block w-100">
+	    </div>
+  	</div>
+ </div>
+</div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+<hr>
+
+<!-- FORM CONTACTOS -->
+<h2 class="text-danger text-center"> Contactos </h2>
+
+<div class="container d-flex justify-content-center">
+<div class="row gy-4 justify-content-center mt-2 border border-danger w-75">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="tu mejor email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Escriba su comentario" required=""></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-25 mb-3" >Enviar mensaje</button>
+  </div>
+</div>
+<hr>
+ 
+
+
+
+<!--FOOTER BOTONES-->
+<div class="container mt-2 justify-content-center">
+	<div class="row d-flex justify-content-center">
+		<div class="col-md-5 d-flex justify-content-center gap-2">
+			<button type="button" class="btn btn-danger">Donaciones</button>
+			<button type="button" class="btn btn-danger">Pide cita</button>
+		</div>
+
+		<div class="col-md-7 d-flex justify-content-center">
+		<b class="text-danger">Copyrith 2025 Panditas</b>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
